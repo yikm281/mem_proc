@@ -17,4 +17,9 @@ PSS - Proportional Set Size （仅供参考）
 USS - Unique Set Size （非常有用）  
 进程独自占用的物理内存（不包含共享库占用的内存）。USS是非常非常有用的数据，因为它反映了运行一个特定进程真实的边际成本（增量成本）。当一个进程被销毁后，USS是真实返回给系统的内存。当进程中存在一个可疑的内存泄露时，USS是最佳观察数据。  
 
-    
+procmem 字段      
+ShCl  --  shared clean  
+ShDi  --  shared dirty  
+PrCl  --  private clean  
+PrDi  --  private dirty  
+
